@@ -71,6 +71,7 @@ class GameElement(ABC):
         Render the corresponding game object with the current item properties
         """
 
+
     @abstractmethod
     def delete(self) -> None:
         """
@@ -78,7 +79,7 @@ class GameElement(ABC):
         """
 
 
-class Game(tk.Frame, ABC): # pylint: disable=too-many-ancestors
+class Game(tk.Frame, ABC):  # pylint: disable=too-many-ancestors
     """
     An abstract class to be implemented with a concrete game class that relies
     on update/render loop
